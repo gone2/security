@@ -1,0 +1,24 @@
+spring:
+    mvc:
+        view:
+            prefix: /WEB-INF/jsp
+            suffix: .jsp
+    datasource:
+        driver-class-name: oracle.jdbc.OracleDriver
+        url: jdbc:oracle:thin:@127.0.0.1:1521/XE
+        username: jiwon_dev
+        password: 1234
+
+
+server:
+    port: 8888
+
+# 스프링 부트 자동 반영
+# devtools:
+#     livereload:
+#         enabled: true
+
+# # xml location
+# mybaits:
+#     type-aliases-package: com.security.projectdao
+#     mapper-location: mappers/*.xml

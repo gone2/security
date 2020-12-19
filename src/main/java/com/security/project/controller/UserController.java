@@ -1,5 +1,6 @@
 package com.security.project.controller;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import com.security.project.dto.UserDto;
@@ -25,9 +26,16 @@ public class UserController {
 
         mvn.addObject("name", "jiwon");
 
-        List<UserDto> testList = userService.selectUser();
+        List<String> testList = new ArrayList<String>();
+        testList.add("a");
+        testList.add("b");
+        testList.add("c");
 
-        System.out.println(testList);
+        mvn.addObject("list", testList);
+
+        // List<UserDto> testList = userService.selectUser();
+
+        // System.out.println(testList);
         return mvn;
     }
 }

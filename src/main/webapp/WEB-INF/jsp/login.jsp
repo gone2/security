@@ -21,8 +21,8 @@
     </form>
 
     <h2>Hello! ${name}</h2>
-    <c:forEach var="listt" items="${list}" varStatus="idx">
-      ${idx.index}, ${listt} <br />
+    <c:forEach var="list" items="${list}" varStatus="idx">
+      ${idx.index}, ${list} <br />
     </c:forEach>
 </div>
 
